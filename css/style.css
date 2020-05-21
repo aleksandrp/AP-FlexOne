@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+a:link {
+    color: #1d1d1d;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1d1d1d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #264e5e;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0d475a;
+    text-decoration: none;
+}
+
+
+/* Layout */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #264e5e;
+
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: #fff;
+}
+
+#main > article {
+    background-color: #fff;
+
+}
+
+.asideNonsticky, .asideSticky {
+
+    background-color: #fff;
+    border: 1px solid #313131;
+
+}
+
+.asideSticky {
+    margin-top: 20px;
+}
+
+.asideHeader {
+
+    border-bottom: 2px solid #222;
+}
+
+.asideHeader > h3 {
+    text-align: left;
+    font-size: 1rem;
+}
+
+footer {
+    background: #313131;
+    min-height: 10vh;
+    color: #b6b6b6;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    min-height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin-top: 0;
+    box-shadow: 0 0 10px #676767;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+header, footer, article, .asideNonsticky, .asideSticky {
+    padding: 1rem;
+}
+
+.heroFull {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    background-color: #32cec3;
+    background-image: url("../img/heroimg.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.heroBoxed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #35ac64;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto 0;
+    padding: 50px 0 50px;
+    background-image: url("../img/hero2img.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.space {
+    margin: 100px;
+}
+
+
+/* basic elements
+/*-----------------------------------------------------*/
+
+
+/* header inner elements like logotype and navigation */
+/*-----------------------------------------------------*/
+
+.wrapper {
+
+    width: 1200px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+}
+
+
+nav {
+    flex: 1 auto;
+}
+
+.mainMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 80px auto 0 auto;
+    height: 90%; /**hack for opera mini**/
+    width: 100%;
+    flex-flow: column nowrap;
+    align-content: stretch;
+    display: none;
+}
+
+.mainMenu a {
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    display: flex;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.mainMenu > li {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px dotted rgba(22, 22, 22, .3);
+    background: rgba(255, 255, 255, 1);
+}
+
+/*
+  MAIN MENU TOGGLE BUTTON
+/*-----------------------------------------------------*/
+/*Hide checkbox*/
+#show-menu-input-checkbox {
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+#show-menu-input-checkbox:checked ~ .mainMenu {
+    display: flex;
+}
+
+#main-menu-toggler {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#main-menu-toggler-icon:after,
+#main-menu-toggler-icon:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+}
+
+#main-menu-toggler-icon:after {
+    top: 9px;
+}
+
+#main-menu-toggler-icon {
+    position: relative;
+    display: block;
+}
+
+#main-menu-toggler-icon,
+#main-menu-toggler-icon:after,
+#main-menu-toggler-icon:before {
+    width: 100%;
+    height: 5px;
+    background-color: rgba(22, 22, 22, 1);
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+}
+
+/* on menu activation */
+#show-menu-input-checkbox:checked ~ #main-menu-toggler > #main-menu-toggler-icon {
+    background-color: transparent;
+}
+
+#show-menu-input-checkbox:checked ~ #main-menu-toggler > #main-menu-toggler-icon:before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#show-menu-input-checkbox:checked ~ #main-menu-toggler > #main-menu-toggler-icon:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+
+
+/* @media layouts
+/*-----------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+    #main {
+        display: flex;
+        flex-direction: row;
+
+        max-width: 1200px;
+        margin: 0 auto 20px;
+        justify-content: space-between;
+    }
+
+    #main > aside {
+        flex: 30vw;
+        margin: 20px 20px 0;
+    }
+
+    #main > aside > .asideNonsticky {
+
+        align-self: flex-start;
+    }
+
+    #main > aside > .asideSticky {
+        position: sticky;
+        top: 150px;
+        align-self: flex-start;
+    }
+
+    #main > article {
+        flex: 70vw;
+
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+
+    /**HIDE THE MENU TOGGLER**/
+    #main-menu-toggler {
+        display: none;
+    }
+
+    /**APPLY HORIZONTAL BAR STYLING TO THE MAIN MENU**/
+    .mainMenu {
+        position: initial;
+        display: flex;
+        flex-flow: row nowrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 80px;
+        margin-top: 0;
+    }
+
+    .mainMenu > li {
+        flex: 1 0 auto;
+        border-bottom: none;
+        background: transparent;
+        align-items: initial;
+    }
+
+    .mainMenu a {
+        font-size: 1.2rem;
+        width: auto;
+        justify-content: flex-end;
+        padding-left: 16px;
+    }
+}
