@@ -143,7 +143,6 @@ header, footer, article, .asideNonsticky, .asideSticky {
     height: 50vh;
     width: 100%;
     background-color: #32cec3;
-    background-image: url("../img/heroimg.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -160,7 +159,6 @@ header, footer, article, .asideNonsticky, .asideSticky {
     width: 100%;
     margin: 20px auto 0;
     padding: 50px 0 50px;
-    background-image: url("../img/hero2img.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -188,8 +186,6 @@ header, footer, article, .asideNonsticky, .asideSticky {
 }
 
 .logo {
-
-
 }
 
 .navbar {
