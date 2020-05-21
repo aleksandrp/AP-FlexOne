@@ -1,22 +1,3 @@
-/*
-Theme Name: White Grail
-Text Domain: whitegrail
-Version: 1.0
-Requires at least: 4.7
-Requires PHP: 7.2.0
-Description: Clean theme on flexboxes. Extra fast responsive layout.
-Tags: blog, one-column, custom-background, custom-colors, custom-whitegrail, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
-Author: Aleksandr Pahharev
-Author URI: https://aleks-r.com/
-Theme URI: https://aleks-r.com/
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-All files, unless otherwise stated, are released under the GNU General Public
-License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
-
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Prata&family=Open+Sans&display=swap');
 
 /* Typography */
