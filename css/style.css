@@ -1,9 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+/*
+Theme Name: White Grail
+Text Domain: whitegrail
+Version: 1.0
+Requires at least: 4.7
+Requires PHP: 7.2.0
+Description: Clean theme on flexboxes. Extra fast responsive layout.
+Tags: blog, one-column, custom-background, custom-colors, custom-whitegrail, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Author: Aleksandr Pahharev
+Author URI: https://aleks-r.com/
+Theme URI: https://aleks-r.com/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Open+Sans&display=swap');
 
 /* Typography */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Prata', serif;
     text-align: center;
 }
 
@@ -68,15 +87,13 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    background-color: #264e5e;
+    background-color: #f3f3f3;
 
 }
 
 #main {
     display: flex;
     flex-direction: column;
-
-
     background-color: #fff;
 }
 
@@ -88,13 +105,11 @@ body {
 .asideNonsticky, .asideSticky {
 
     background-color: #fff;
-    border: 1px solid #313131;
+    box-shadow: 1px 1px 5px #aaaaaa;
+    margin-bottom: 20px;
 
 }
 
-.asideSticky {
-    margin-top: 20px;
-}
 
 .asideHeader {
 
@@ -126,7 +141,7 @@ header {
     top: 0;
     z-index: 2;
     margin-top: 0;
-    box-shadow: 0 0 10px #676767;
+    box-shadow: 0 0 5px #676767;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
 }
@@ -143,7 +158,6 @@ header, footer, article, .asideNonsticky, .asideSticky {
     height: 50vh;
     width: 100%;
     background-color: #32cec3;
-   /* background-image: url("../img/heroimg.jpeg");*/
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -160,7 +174,6 @@ header, footer, article, .asideNonsticky, .asideSticky {
     width: 100%;
     margin: 20px auto 0;
     padding: 50px 0 50px;
-  /*  background-image: url("../img/hero2img.jpeg");*/
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -172,11 +185,25 @@ header, footer, article, .asideNonsticky, .asideSticky {
 }
 
 
-/* basic elements
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3%;
+}
+img:hover {
+    -webkit-filter: grayscale(40%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(40%);
+}
+
+.logo:hover{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+/* BASIC ELEMENTS
 /*-----------------------------------------------------*/
 
 
-/* header inner elements like logotype and navigation */
+/* header inner elements like whitegrailtype and navigation */
 /*-----------------------------------------------------*/
 
 .wrapper {
@@ -187,8 +214,9 @@ header, footer, article, .asideNonsticky, .asideSticky {
     align-items: center;
 }
 
-.logo {
-    
+.whitegrail {
+
+
 }
 
 .navbar {
@@ -314,7 +342,7 @@ nav {
         flex-direction: row;
 
         max-width: 1200px;
-        margin: 0 auto 20px;
+        margin: 20px auto 20px;
         justify-content: space-between;
     }
 
