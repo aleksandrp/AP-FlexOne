@@ -82,6 +82,12 @@ body {
     background-color: #fff;
 
 }
+.article-left-aside {
+     order: 1;
+}
+.left-aside{
+    order: 2;
+}
 
 .asideNonsticky, .asideSticky {
 
@@ -201,7 +207,6 @@ img:hover {
     justify-content: space-between;
     align-items: center;
 }
-
 
 .navbar {
     display: flex;
@@ -349,6 +354,13 @@ nav {
     #main > article {
         flex: 70vw;
 
+    }
+
+    .article-left-aside {
+        order: 2;
+    }
+    .left-aside{
+        order: 1;
     }
 }
 
