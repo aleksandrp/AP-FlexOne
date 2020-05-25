@@ -72,13 +72,13 @@ body {
 
 }
 
-#main {
+main {
     display: flex;
     flex-direction: column;
     background-color: #fff;
 }
 
-#main > article {
+main > article {
     background-color: #fff;
 
 }
@@ -326,7 +326,7 @@ nav {
 /*-----------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
-    #main {
+    main {
         display: flex;
         flex-direction: row;
 
@@ -335,23 +335,23 @@ nav {
         justify-content: space-between;
     }
 
-    #main > aside {
+    main > aside {
         flex: 30vw;
         margin: 20px 20px 0;
     }
 
-    #main > aside > .asideNonsticky {
+    main > aside > .asideNonsticky {
 
         align-self: flex-start;
     }
 
-    #main > aside > .asideSticky {
+    main > aside > .asideSticky {
         position: sticky;
         top: 150px;
         align-self: flex-start;
     }
 
-    #main > article {
+    main > article {
         flex: 70vw;
 
     }
